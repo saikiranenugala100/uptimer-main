@@ -1,0 +1,61 @@
+Full Stack Developer Project
+Assessment
+Objective
+The goal of this assessment is to evaluate the candidate’s ability to design and implement a
+Laravel application that meets real-world requirements. The submitted solution will be assessed
+to determine whether it reflects the skills.
+Problem Statement
+We are launching a website uptime monitoring software where a client can provide an email
+address and a list of websites they want monitored. The application must meet the following
+requirements:
+Functionality Requirements
+1. Client Input:
+○ Each client provides an email address.
+○ Each client submits a list of websites they wish to monitor.
+○ Client information will be manually entered into the database during
+deployment.
+2. Monitoring Process:
+○ The homepages of the provided websites must be checked every 15 minutes.
+○ If a website is unreachable within 10 seconds or returns an error, an alert must
+be triggered.
+3. Email Notification System:
+○ An email should be sent to the client when a website is down.
+○ The email subject line should be formatted as: "{website URL} is down!"
+○ The email body should contain the same message.
+○ The sender of the email should be do-not-reply@example.com.
+4. Client and Website Display:
+○ The home page will display a select input with the list of all client emails.
+○ When a client email is selected in the select input, a bullet point list of all of the
+client's websites will display as hyperlinks below the select input.
+○ When a hyperlink is clicked, a dialog should appear with the text "You are about
+to visit {website}. Do you want to continue?" with "Continue" and "Cancel"
+options. If "Continue", the website opens in a new tab. If "Cancel", the dialog
+simply closes.
+Scalability Requirements
+● The application should support hundreds of clients at launch.
+● Each client should be able to monitor up to ten websites.
+Technical Considerations
+● This is a greenfield project intended to be continuously expanded with new features
+and additional clients.
+● The Minimum Viable Product (MVP) should focus on core functionality.
+● The project will be deployed in a standard LAMP stack environment with Redis
+installed.
+● Laravel's built-in drivers will be used for all production configurations (e.g., SES for
+email, etc.).
+● The database should be MySQL or MariaDB.
+● The frontend should be a Single Page Application built with Vue.js.
+● There is no need to include any authentication because the website will not be publicly
+accessible.
+Submission Guidelines
+● The estimated time for this project is 8-12 hours.
+● Once completed, please upload the project to GitHub and share the repository link.
+Evaluation Criteria
+The project will be reviewed based on:
+● Code quality and maintainability
+● Adherence to Laravel best practices
+● Efficiency of the website monitoring implementation
+● Scalability considerations
+● Error handling and robustness
+● Proper use of Laravel’s built-in drivers
+This assessment will help determine if the candidate has the required expertise to work on a
+growing Laravel application effectively.
